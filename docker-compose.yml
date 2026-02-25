@@ -1,0 +1,13 @@
+services:
+  ocr:
+    build: .
+    container_name: ndlocr-lite-container
+    volumes:
+      - ./input:/app/input
+      - ./output:/app/output
+      - ndl-model-cache:/root/.cache/ndlocr
+    tty: true
+    stdin_open: true
+
+volumes:
+  ndl-model-cache:

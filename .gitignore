@@ -1,0 +1,26 @@
+# --- OCR Data (Keep folders, ignore content) ---
+input/*
+!input/.gitkeep
+output/*
+!output/.gitkeep
+
+# --- Docker & Environment ---
+.env
+*.log
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+ENV/
+
+# --- OS Specific ---
+.DS_Store
+Thumbs.db
+
+# --- IDEs ---
+.vscode/
+.idea/
